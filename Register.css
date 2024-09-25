@@ -1,0 +1,398 @@
+.Create-Acc-but {
+  width: 516px;
+  height: 50px;
+  background-color: #cb1c1f;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.picture {
+  margin-right: 125px;
+}
+.Register-form {
+  width: 550px;
+  height: 430px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #b0b0b0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Reg_form_atr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-form {
+  padding-top: 20px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.Inputfield {
+  width: 416px;
+  height: 50px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #b0b0b0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+}
+.hide-me {
+  width: 18px;
+  height: 16.38px;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+}
+.person-vec {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 19.5px;
+  left: 15px;
+}
+.Name {
+  display: flex;
+  justify-content: space-between;
+}
+.FullName {
+  position: relative;
+  align-items: center;
+}
+.FirstName {
+  width: 180px;
+  height: 50px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #b0b0b0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-size: 15px;
+  margin-right: 12px;
+}
+.lastname {
+  width: 180px;
+  height: 50px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #b0b0b0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-size: 15px;
+}
+.register-acc {
+  color: #cb1c1f;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+.about {
+  width: 424px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.Login-button {
+  margin-top: 30px;
+  height: 42.5px;
+  width: 150px;
+  top: 676px;
+  left: 1004px;
+  border: 0.5px;
+  border-style: solid;
+  border-radius: 35px;
+  color: #b0b0b0;
+  border-color: #b0b0b0;
+  background-color: white;
+  font-size: 16px;
+}
+.log-Reg_form_atr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1080px) and (min-width: 900px) {
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .picture {
+    display: none;
+  }
+  .email-vec {
+    top: 21.5px;
+    left: 16.5px;
+    width: 15px;
+    height: 12px;
+  }
+  .password_vec {
+    top: 17.5px;
+    left: 16.5px;
+    width: 14px;
+    height: 16.75px;
+  }
+  .person-vec {
+    left: 14.5px;
+  }
+  .see-me {
+    top: 19.5px;
+    right: 10px;
+    width: 16px;
+    height: 12.75px;
+  }
+  .hide-me {
+    top: 19.5px;
+    right: 10px;
+    width: 16px;
+    height: 16.75px;
+  }
+}
+@media (max-width: 900px) and (min-width: 550px) {
+  .top {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .picture {
+    display: none;
+  }
+  .email-vec {
+    top: 21.5px;
+    left: 16.5px;
+    width: 15px;
+    height: 12px;
+  }
+  .password_vec {
+    top: 17.5px;
+    left: 16.5px;
+    width: 14px;
+    height: 16.75px;
+  }
+  .person-vec {
+    left: 14.5px;
+  }
+  .see-me {
+    top: 19.5px;
+    right: 10px;
+    width: 16px;
+    height: 12.75px;
+  }
+  .hide-me {
+    top: 19.5px;
+    right: 10px;
+    width: 16px;
+    height: 16.75px;
+  }
+}
+@media (max-width: 550px) and (min-width: 380px) {
+  .top {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bottom {
+    align-items: center;
+    justify-content: center;
+  }
+  .picture {
+    display: none;
+  }
+  .Register-form {
+    width: 75%;
+    height: 400px;
+    padding: 10px;
+  }
+  .Reg_form_atr {
+    width: 100%;
+  }
+  .FullName {
+    display: flex;
+    justify-content: center;
+  }
+  .FirstName {
+    width: 100px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+  .lastname {
+    height: 35px;
+    width: 100px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+  .Inputfield {
+    width: 100%;
+    font-size: 13px;
+    height: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .Create-Acc-but {
+    width: 100%;
+    font-size: 14px;
+  }
+  .Login-button {
+    width: 100px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .register-acc {
+    font-size: 16px;
+  }
+  .about {
+    font-size: 14px;
+  }
+  .email-vec {
+    top: 14.5px;
+    left: 10px;
+    width: 12px;
+    height: 9px;
+  }
+  .password_vec {
+    top: 13px;
+    left: 10px;
+    width: 12px;
+    height: 14px;
+  }
+  .person-vec {
+    top: 13.5px;
+    left: 10px;
+  }
+  .see-me {
+    top: 15px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+  .hide-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 15px;
+  }
+  .picture {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .top {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  .bottom {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .picture {
+    display: none;
+  }
+  .Register-form {
+    width: 75%;
+    height: 400px;
+    padding: 10px;
+  }
+  .Reg_form_atr {
+    width: 100%;
+  }
+  .FullName {
+    display: flex;
+    justify-content: center;
+  }
+  .FirstName {
+    width: 100px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 13px;
+  }
+  .lastname {
+    height: 35px;
+    width: 100px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 13px;
+  }
+  .Inputfield {
+    width: 100%;
+    font-size: 13px;
+    height: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .Create-Acc-but {
+    width: 100%;
+    font-size: 14px;
+  }
+  .Login-button {
+    width: 100px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .register-acc {
+    font-size: 16px;
+  }
+  .about {
+    font-size: 14px;
+  }
+  .email-vec {
+    top: 14.5px;
+    left: 10px;
+    width: 12px;
+    height: 9px;
+  }
+  .password_vec {
+    top: 13px;
+    left: 10px;
+    width: 12px;
+    height: 14px;
+  }
+  .person-vec {
+    top: 13.5px;
+    left: 10px;
+  }
+  .see-me {
+    top: 15px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+  .hide-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 15px;
+  }
+  .picture {
+    display: none;
+  }
+}

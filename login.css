@@ -1,0 +1,444 @@
+body {
+  margin: 0px 0px;
+  font-family: "Ubuntu Sans", system-ui;
+  min-height: 100vh;
+}
+button:hover {
+  cursor: pointer;
+}
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  padding-top: 2.35%;
+  padding-left: 90px;
+  padding-right: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.create-but {
+  height: 40px;
+  width: 150px;
+  border: 1px;
+  border-radius: 75px;
+  border-style: solid;
+  background-color: white;
+  border-color: #2e2e2e;
+}
+.bottom {
+  padding-right: 125px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.car-img {
+  width: 714px;
+  height: 503px;
+}
+.picture {
+  display: flex;
+  margin-top: 60px;
+}
+.login-form {
+  width: 516px;
+  height: 399px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.text {
+  height: auto;
+  font-size: 50px;
+}
+span {
+  color: #cb1c1f;
+}
+.form {
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form input {
+  width: 413px;
+  height: 50px;
+  border: 0.5px solid #b0b0b0;
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+}
+.form_atr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.email-vec {
+  width: 14.5px;
+  height: 10.3px;
+  position: absolute;
+  top: 21.8px;
+  left: 20px;
+}
+.password_vec {
+  width: 14px;
+  height: 17.5px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+.see-me {
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  cursor: pointer;
+}
+.login-but {
+  width: 516px;
+  height: 50px;
+  background-color: #cb1c1f;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.Forgot-but {
+  border: none;
+  background-color: white;
+}
+#pass-alert,
+#email-alert {
+  color: #cb1c1f;
+  margin-bottom: 5px;
+  font-size: 12px;
+  display: none;
+}
+@media (max-width: 1400px) and(min-width:1200) {
+  .form input {
+    max-width: 260px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .text p {
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .login-but {
+    width: 100%;
+    max-width: 300px;
+  }
+  .email-vec {
+    left: 12px;
+    top: 15px;
+    width: 12.5px;
+    height: 9px;
+  }
+  .password_vec {
+    left: 12px;
+    top: 11px;
+    width: 13px;
+    height: 15px;
+  }
+  .see-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1080px) {
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .picture {
+    display: none;
+  }
+}
+@media (max-width: 1080px) and (min-width: 700px) {
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .picture {
+    display: none;
+  }
+  .form_atr {
+    width: 400px;
+  }
+  .login-but {
+    max-width: 390px;
+  }
+  .text p {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 30px;
+  }
+  .form input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 13px;
+  }
+  .email-vec {
+    top: 17.5px;
+    left: 23px;
+  }
+  .password_vec {
+    top: 14px;
+    left: 24.5px;
+  }
+  .see-me {
+    top: 14px;
+  }
+}
+@media (max-width: 700px) and (min-width: 480px) {
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .top {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .picture {
+    display: none;
+  }
+  .form_atr {
+    width: 300px;
+  }
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  .text p {
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  .form input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 13px;
+  }
+  .email-vec {
+    top: 17.5px;
+    left: 14px;
+  }
+  .password_vec {
+    top: 14px;
+    left: 15.5px;
+  }
+  .see-me {
+    top: 14px;
+  }
+}
+@media (max-width: 480px) and (min-width: 450px) {
+  .container {
+    padding-top: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .left-sec {
+    padding-right: 25px;
+  }
+  .picture {
+    display: none;
+  }
+  .form_atr {
+    width: 300px;
+  }
+  .form input {
+    max-width: 260px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .text p {
+    max-width: 300px;
+    font-size: 30px;
+    padding-left: 0px;
+  }
+  .login-but {
+    width: 100%;
+    max-width: 300px;
+  }
+  .email-vec {
+    left: 12px;
+    top: 15px;
+    width: 12.5px;
+    height: 9px;
+  }
+  .password_vec {
+    left: 12px;
+    top: 11px;
+    width: 13px;
+    height: 15px;
+  }
+  .see-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+}
+@media (max-width: 450px) and (min-width: 400px) {
+  .container {
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .left-sec {
+    padding-right: 25px;
+  }
+  .picture {
+    display: none;
+  }
+  .form_atr {
+    width: 300px;
+  }
+  .form input {
+    max-width: 260px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .text p {
+    max-width: 300px;
+    font-size: 30px;
+    padding-left: 0px;
+  }
+  .login-but {
+    width: 100%;
+    max-width: 300px;
+  }
+  .email-vec {
+    left: 12px;
+    top: 15px;
+    width: 12.5px;
+    height: 9px;
+  }
+  .password_vec {
+    left: 12px;
+    top: 11px;
+    width: 13px;
+    height: 15px;
+  }
+  .see-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .create-but {
+    width: 120px;
+    font-size: 13px;
+    height: 35px;
+    border-radius: 30px;
+  }
+  .bottom {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .left-sec {
+    padding-right: 25px;
+  }
+  .picture {
+    display: none;
+  }
+  .form_atr {
+    width: 300px;
+  }
+  .form input {
+    max-width: 260px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .text p {
+    max-width: 300px;
+    font-size: 30px;
+    padding-left: 0px;
+  }
+  .login-but {
+    width: 100%;
+    max-width: 300px;
+  }
+  .email-vec {
+    left: 12px;
+    top: 15px;
+    width: 12.5px;
+    height: 9px;
+  }
+  .password_vec {
+    left: 12px;
+    top: 11px;
+    width: 13px;
+    height: 15px;
+  }
+  .see-me {
+    top: 13px;
+    right: 10px;
+    width: 14px;
+    height: 11px;
+  }
+}

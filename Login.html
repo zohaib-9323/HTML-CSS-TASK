@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="left-sec">
+          <img src="/assets/logo.png" alt="" />
+        </div>
+        <div class="right-sec">
+          <a href="Register.html"
+            ><button class="create-but">Create Account</button></a
+          >
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="picture">
+          <img class="car-img" src="/assets/Image.png" alt="" />
+        </div>
+        <div class="login-form">
+          <div class="text">
+            <p>Login your account on <span>Gas</span>App</p>
+          </div>
+          <div class="form">
+            <form action="">
+              <div class="form_atr">
+                <img class="email-vec" src="/assets/email.png" alt="" />
+                <input type="email" id="emailInput" placeholder="Email" />
+              </div>
+              <div id="email-alert">
+                <p>Enter valid Email!</p>
+              </div>
+              <div class="form_atr">
+                <img class="password_vec" src="/assets/password.png" alt="" />
+                <input type="password" id="paswrd" placeholder="Password" />
+                <img
+                  class="see-me"
+                  src="/assets/unhide.png"
+                  alt=""
+                  id="seeme"
+                />
+              </div>
+              <div id="pass-alert">
+                <p>Password can't be Null!</p>
+              </div>
+              <div class="form_atr">
+                <button type="button" class="login-but" id="loginButton">
+                  Login
+                </button>
+              </div>
+              <div class="form_atr">
+                <button type="button" class="Forgot-but">
+                  Forgot password?
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let seeme = document.getElementById("seeme");
+      let paswrd = document.getElementById("paswrd");
+      seeme.onclick = function () {
+        if (paswrd.type == "password") {
+          paswrd.type = "text";
+        } else {
+          paswrd.type = "password";
+        }
+      };
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginButton = document.getElementById("loginButton");
+        const emailInput = document.getElementById("emailInput");
+        const passwordInput = document.getElementById("paswrd");
+        loginButton.addEventListener("click", function () {
+          const email = emailInput.value;
+          const password = passwordInput.value;
+          const emailPattern =
+            /^(?!.*\.com\.com)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          const isValid = emailPattern.test(email);
+          if (!isValid) {
+            document.getElementById("email-alert").style.display = "block";
+          } else {
+            document.getElementById("email-alert").style.display = "none";
+          }
+          if (password == "") {
+            document.getElementById("pass-alert").style.display = "block";
+          } else {
+            document.getElementById("pass-alert").style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

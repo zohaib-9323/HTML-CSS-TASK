@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="Register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div>
+          <img src="/assets/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="picture">
+          <img class="car-img" src="/assets/Image.png" alt="" />
+        </div>
+        <div class="bottom">
+          <div class="Register-form">
+            <div class="signup-form">
+              <div class="Reg_form_atr">
+                <p class="register-acc">Register you Account!</p>
+              </div>
+              <div class="Reg_form_atr">
+                <p class="about">
+                  We invite you to join the GasApp community! Create and verify
+                  your profile to get fuel credit for your vehicle!
+                </p>
+              </div>
+              <div class="Reg_form_atr">
+                <div class="Name">
+                  <div class="FullName">
+                    <img class="person-vec" src="/assets/person.png" alt="" />
+                    <input
+                      class="FirstName"
+                      type="text"
+                      placeholder="FirstName"
+                    />
+                  </div>
+                  <div class="FullName">
+                    <img class="person-vec" src="/assets/person.png" alt="" />
+                    <input
+                      class="lastname"
+                      type="text"
+                      placeholder="LastName"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="Reg_form_atr">
+                <img class="email-vec" src="/assets/email.png" alt="" />
+                <input class="Inputfield" type="email" placeholder="Email" />
+              </div>
+              <div class="Reg_form_atr">
+                <img class="password_vec" src="/assets/password.png" alt="" />
+                <input
+                  class="Inputfield"
+                  type="password"
+                  name=""
+                  placeholder="Password"
+                  id="paswrd"
+                />
+                <img
+                  class="see-me"
+                  src="/assets/unhide.png"
+                  alt=""
+                  id="seeme"
+                />
+              </div>
+              <div class="Reg_form_atr">
+                <img class="password_vec" src="/assets/password.png" alt="" />
+                <input
+                  class="Inputfield"
+                  type="password"
+                  name=""
+                  placeholder="Re-Type password"
+                  id="retypepaswrd"
+                />
+                <img
+                  style="cursor: pointer"
+                  class="hide-me"
+                  src="/assets/hide.png"
+                  alt=""
+                  id="unhideme"
+                />
+              </div>
+              <div class="Reg_form_atr">
+                <button class="Create-Acc-but">Create Account</button>
+              </div>
+            </div>
+            <div class="log-Reg_form_atr">
+              <a href="Login.html"
+                ><button class="Login-button">Log in</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let seeme = document.getElementById("seeme");
+      let paswrd = document.getElementById("paswrd");
+      seeme.onclick = function () {
+        if (paswrd.type == "password") {
+          paswrd.type = "text";
+        } else {
+          paswrd.type = "password";
+        }
+      };
+      let unhideme = document.getElementById("unhideme");
+      let retypepaswrd = document.getElementById("retypepaswrd");
+      unhideme.onclick = function () {
+        if (retypepaswrd.type == "password") {
+          retypepaswrd.type = "text";
+        } else {
+          retypepaswrd.type = "password";
+        }
+      };
+    </script>
+  </body>
+</html>
